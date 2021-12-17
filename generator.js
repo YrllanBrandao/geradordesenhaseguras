@@ -86,7 +86,7 @@ function upperLowNum(up, low, num)
           
           case 3://gera com numeros
             
-            const m = Math.floor((Math.random() * 26) + 1);
+            const m = Math.floor((Math.random() * 9) + 1);
             
             const indice3 = num[m];
             newPassword.push(indice3);
