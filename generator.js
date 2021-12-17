@@ -10,7 +10,7 @@ function allChecked(up, low, num, symb)
         switch(opt)
         {
           case 1://gera letras com minúsculo
-            const n = Math.floor((Math.random()*barra.value)+1);
+            const n = Math.floor((Math.random()*26)+1);
             
             const indice = low[n];
             newPassword.push(indice);
@@ -20,7 +20,7 @@ function allChecked(up, low, num, symb)
             break
           
           case 2:// gera com letras maiúsculas
-          const o = Math.floor((Math.random() * barra.value) + 1);
+          const o = Math.floor((Math.random() * 26) + 1);
           
           const indice2 = up[o];
           newPassword.push(indice2);
@@ -30,7 +30,7 @@ function allChecked(up, low, num, symb)
           
           case 3://gera com numeros
             
-            const m = Math.floor((Math.random() * barra.value) + 1);
+            const m = Math.floor((Math.random() * 9) + 1);
             
             const indice3 = num[m];
             newPassword.push(indice3);
@@ -38,7 +38,7 @@ function allChecked(up, low, num, symb)
             
            case 4: //gera com simbolos
             
-              const y = Math.floor((Math.random() * barra.value) + 1);
+              const y = Math.floor((Math.random() * 19) + 1);
             
             const indice4 = symb[y];
             newPassword.push(indice4);
@@ -66,7 +66,7 @@ function upperLowNum(up, low, num)
         switch(opt)
         {
           case 1://gera letras com minúsculo
-            const n = Math.floor((Math.random()*barra.value)+1);
+            const n = Math.floor((Math.random()*26)+1);
             
             const indice = low[n];
             newPassword.push(indice);
@@ -76,7 +76,7 @@ function upperLowNum(up, low, num)
             break
           
           case 2:// gera com letras maiúsculas
-          const o = Math.floor((Math.random() * barra.value) + 1);
+          const o = Math.floor((Math.random() * 26) + 1);
           
           const indice2 = up[o];
           newPassword.push(indice2);
@@ -86,7 +86,7 @@ function upperLowNum(up, low, num)
           
           case 3://gera com numeros
             
-            const m = Math.floor((Math.random() * barra.value) + 1);
+            const m = Math.floor((Math.random() * 26) + 1);
             
             const indice3 = num[m];
             newPassword.push(indice3);
@@ -115,7 +115,7 @@ function upperLow(up, low)
         switch(opt)
         {
           case 1://gera letras com minúsculo
-            const n = Math.floor((Math.random()*barra.value)+1);
+            const n = Math.floor((Math.random()*26)+1);
             
             const indice = low[n];
             newPassword.push(indice);
@@ -125,7 +125,7 @@ function upperLow(up, low)
             break
           
           case 2:// gera com letras maiúsculas
-          const o = Math.floor((Math.random() * barra.value) + 1);
+          const o = Math.floor((Math.random() * 26) + 1);
           
           const indice2 = up[o];
           newPassword.push(indice2);
