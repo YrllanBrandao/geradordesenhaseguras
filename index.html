@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Generate Password</title>
+ 
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body  onload="generatePassword()" >
+<div class="interface">
+  <header class="cabecalho">
+    <h1>Crie uma senha Forte :)</h1>
+    
+  </header>
+  
+  <main>
+    
+    <div class="formulario">
+      
+      <input type="text" name="password" id="password" placeholder="Sua senha" readonly />
+      
+      
+      tamanho da Senha:
+     <span class="pl">25</span>
+      <input type="range" name="tamanhoSenha" id="tamanhoSenha" value="25" min="1" max="50" onchange="atualizaTAmanho()"/>
+      
+      Caracteres usados
+      <div class="caracteres">
+        <input type="checkbox" name="" id="uppercase" / checked>ABC 
+        <input type="checkbox" name="lowercase" id="lowercase" checked/>abc
+        <input type="checkbox" name="numbers" id="numbers" checked />123
+        <input type="checkbox" name="simbolos" id="simbolos" checked/>*#&
+         
+         
+      </div>
+       <button id="geradorPass">Gerar Nova Senha</button>
+    </div>
+    
+  </main>
+  
+  
+
+</div>
+
+<!--scripts area-->
+  <script src="_javascript/main.js"></script>
+  <script src="_javascript/checkers.js" ></script>
+  <script src="_javascript/generator.js"></script>
+  
+</body>
+</html>
