@@ -96,3 +96,6 @@ footer{
 #simbolos{
   margin:auto 0 auto 15px;
 }
+#geradorPass{
+  border-radius: 5px;
+}
