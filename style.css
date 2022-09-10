@@ -9,6 +9,9 @@
     opacity: 1;
   }
 }
+body{
+  overflow-y: hidden;
+}
 *{
   margin:0;
   padding:0;
