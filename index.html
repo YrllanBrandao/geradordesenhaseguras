@@ -7,12 +7,14 @@
 
   <title>Generate Password</title>
  
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body  onload="generatePassword()" >
-<div class="interface">
+<div class="container-fluid p-0 m-0">
   <header class="cabecalho">
     <h1>Crie uma senha Forte :)</h1>
     
@@ -21,14 +23,19 @@
   <main>
     
     <div class="formulario">
+      <div class="row-input d-flex">
+      <input type="text" name="password" class="" id="password" placeholder="Sua senha" readonly />
       
-      <input type="text" name="password" id="password" placeholder="Sua senha" readonly />
       
+        <button class="btn btn-copy" id="copy">
+          <iconify-icon icon="fluent:copy-arrow-right-24-regular" style="color: #564E71;" class="icon-iconify"></iconify-icon>
+        </button>
+      </div>
       
       tamanho da Senha:
      <span class="pl">25</span>
-      <input type="range" name="tamanhoSenha" id="tamanhoSenha" value="25" min="1" max="200" onchange="atualizaTamanho()"/>
       
+        <input type="range" name="tamanhoSenha" id="tamanhoSenha" value="25" min="1" max="200" onchange="atualizaTamanho()"/>
       Caracteres usados
       <div class="caracteres">
         <input type="checkbox" name="" id="uppercase" / checked>ABC 
@@ -46,11 +53,14 @@
   
 
 </div>
-
+<!-- Bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- iconify -->
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 <!--scripts area-->
   <script src="main.js"></script>
   <script src="checkers.js" ></script>
   <script src="generator.js"></script>
-  
+  <script src="./copy.js"></script>
 </body>
 </html>
