@@ -34,7 +34,9 @@ body{
   text-align: center;
   line-height: 20vh;
   text-shadow: 1px 1px 2px #000;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-copy{
@@ -111,4 +113,17 @@ footer{
   border:none;
   cursor: pointer;
  
+}
+
+
+@media only screen and (min-width: 1200px)
+{
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    border: 1px solid red;
+    height: 100%;
+  }
 }

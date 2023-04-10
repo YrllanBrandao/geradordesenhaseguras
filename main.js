@@ -1,26 +1,21 @@
 const upperCase = document.querySelector('#uppercase');
 const lowerCase = document.querySelector('#lowercase');
 const numbers = document.querySelector('#numbers');
-const simbolos = document.querySelector('#simbolos');
+const simbolos = document.querySelector('#symbols');
 const barra = document.querySelector("#tamanhoSenha");
 const suaSenha = document.querySelector("#password");
 const geradorPass = document.querySelector('#geradorPass')
 
 
-function atualizaTamanho(){
- 
-  
-  
+function atualizaTamanho() {
   const span = document.querySelector(".pl");
- 
- span.innerHTML = barra.value;
-  
-  
 
- 
+  span.innerHTML = barra.value;
 }
   
 geradorPass.addEventListener('click',() =>{
+
+
   generatePassword()
   atualizaTamanho()
 
@@ -37,7 +32,6 @@ function generatePassword()
   const senha = [];
   const lowers = ['a','b','c','d','e','f','g','h', 'i', 'j','k','l','m','n','o','p','q', 'r','s','t','u','v','w','x','y','z'];
 
-  console.log(lowers.length +"--array")
   const uppers = ['A','B','C','D','E','F','G','H', 'I', 'J','K','L','M','N','O','P','Q', 'R','S','T','U','V','W','X','Y','Z'];
   const symbols = ['*','#','@','$','+','/','?','-','.','_','&',':',';'];
 
@@ -70,7 +64,21 @@ function generatePassword()
        upper(uppers)
        
        break;
+
+       case "5":
+      num(nums)
+       break;
+       case "6":
+      lower(lowers);
+       break;
+       case "7":
+      symb(symbols)
+       break;
+      
     }
+
+   
+
 }
 
 
@@ -79,8 +87,7 @@ function generatePassword()
 function mostrarSenha(np)
 {
    const passwordYour = np.join().replaceAll(',', '');
-   console.log((Math.random()*4)+1)
-        console.log(passwordYour.length + "------------")
+ 
      suaSenha.value = passwordYour;
      
 }
